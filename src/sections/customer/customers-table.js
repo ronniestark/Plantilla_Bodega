@@ -39,6 +39,7 @@ export const CustomersTable = (props) => {
   const selectedSome = (selected.length > 0) && (selected.length < items.length);
   const selectedAll = (items.length > 0) && (selected.length === items.length);
 
+  
 
   return (
     //color de la parte inferior de la tabla donde estan los cambios de pagina
@@ -50,11 +51,12 @@ export const CustomersTable = (props) => {
 
           <Table >
           
-            <TableHead>
+            <TableHead >
           
               <TableRow >
                 
                 <TableCell 
+                style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8' }}
                  padding="checkbox"
                 >
                   <Checkbox
@@ -71,16 +73,16 @@ export const CustomersTable = (props) => {
                   />
                 </TableCell>
                 
-                <TableCell >
+                <TableCell  style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8', fontSize: '15px'}} >
                   Codigó
                 </TableCell  >
-                <TableCell >
+                <TableCell style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8',fontSize: '15px' }}>
                   Area
                 </TableCell>
-                <TableCell>
+                <TableCell style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8', fontSize: '15px' }}>
                   Descripción
                 </TableCell>
-                <TableCell>
+                <TableCell style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8',fontSize: '15px' }}>
                   Cantidad
                 </TableCell>
                 {/* <TableCell>

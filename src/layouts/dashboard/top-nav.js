@@ -64,7 +64,9 @@ export const TopNav = (props) => {
           >
             {!lgUp && (
               <IconButton onClick={onNavOpen}>
-                <SvgIcon fontSize="large">
+                <SvgIcon fontSize="large" 
+                 style={{ color: 'black' }}>
+                  {/* ICONO QUE MUESTRA LA PANEL DE LAS PAGINAS */}
                   <Bars3Icon />
                 </SvgIcon>
               </IconButton>
@@ -89,19 +91,24 @@ export const TopNav = (props) => {
                 </SvgIcon>
               </IconButton>
             </Tooltip> */}
-            <Tooltip title="Notifications">
+            <Tooltip title="Notificaciones">
               <IconButton>
                 <Badge
                   badgeContent={4}
                   color="success"
                   variant="dot"
                 >
-                  <SvgIcon fontSize="large">
-                    <BellIcon />
+                  {/* ICONO DE LA CAMPANA DE NOTIFICACIONES */}
+                  <SvgIcon fontSize="large"
+                  style={{ color: '#000000' }}
+                  >
+                    <BellIcon/>
                   </SvgIcon>
                 </Badge>
               </IconButton>
             </Tooltip>
+
+            <Tooltip title="Cuenta">
             <Avatar
               onClick={accountPopover.handleOpen}
               ref={accountPopover.anchorRef}
@@ -112,6 +119,7 @@ export const TopNav = (props) => {
               }}
               src="/assets/avatars/user_2.png"
             />
+            </Tooltip>
           </Stack>
         </Stack>
       </Box>

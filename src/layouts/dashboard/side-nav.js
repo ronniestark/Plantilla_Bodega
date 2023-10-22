@@ -42,7 +42,8 @@ export const SideNav = (props) => {
           height: '100%'
         }}
       >
-        <Box sx={{ p: 3 }}>
+        {/* ESTILO DEL CUADRADO DONDE ESTA EL LOGO Y EL TEXTO DE LA UNI */}
+        <Box sx={{ p: 3 , background: '#000000'}} >
           <Box
             component={NextLink}
             href="/"
@@ -65,16 +66,14 @@ export const SideNav = (props) => {
     >
       UNIVERSIDAD NACIONAL DE INGENIERIA UNI
     </Typography>
-            <Logo
-           
-             />
+            <Logo/>
             
-
           </Box>
+          {/* ESTILO DE LA CAJITA DONDE DICE SIU */}
           <Box
             sx={{
               alignItems: 'center',
-              backgroundColor: 'rgba(255, 255, 255, 0.04)',
+              backgroundColor: 'rgba(255, 255, 255, 0.08)',
               borderRadius: 1,
               cursor: 'pointer',
               display: 'flex',
@@ -98,7 +97,7 @@ export const SideNav = (props) => {
               </Typography>
             </div>
             <SvgIcon
-              fontSize="small"
+              fontSize="large"
               sx={{ color: 'neutral.500' }}
             >
               <ChevronUpDownIcon />
@@ -111,7 +110,8 @@ export const SideNav = (props) => {
           sx={{
             flexGrow: 1,
             px: 2,
-            py: 3
+            py: 3,
+            background: '#000000'
           }}
         >
           <Stack
