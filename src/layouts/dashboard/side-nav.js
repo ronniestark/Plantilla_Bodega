@@ -43,7 +43,7 @@ export const SideNav = (props) => {
         }}
       >
         {/* ESTILO DEL CUADRADO DONDE ESTA EL LOGO Y EL TEXTO DE LA UNI */}
-        <Box sx={{ p: 3 , background: '#000000'}} >
+        <Box sx={{ p: 3 , background: '#1A237E'}} >
           <Box
             component={NextLink}
             href="/"
@@ -105,13 +105,15 @@ export const SideNav = (props) => {
           </Box>
         </Box>
         <Divider sx={{ borderColor: 'neutral.700' }} />
+        {/* ESTILO DEL NAV DONDE SE SELECIONAN LAS PAGINAS */}
         <Box
           component="nav"
           sx={{
             flexGrow: 1,
             px: 2,
             py: 3,
-            background: '#000000'
+            //COLOR NEGRO
+            background: '#1A237E'
           }}
         >
           <Stack

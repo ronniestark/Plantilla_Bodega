@@ -56,7 +56,7 @@ export const CustomersTable = (props) => {
               <TableRow >
                 
                 <TableCell 
-                style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8' }}
+                style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#1A237E' }}
                  padding="checkbox"
                 >
                   <Checkbox
@@ -73,16 +73,16 @@ export const CustomersTable = (props) => {
                   />
                 </TableCell>
                 
-                <TableCell  style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8', fontSize: '15px'}} >
+                <TableCell  style={{ fontWeight: 'bold', fontFamily: 'Arial',color:'white', background: '#1A237E', fontSize: '15px'}} >
                   Codigó
                 </TableCell  >
-                <TableCell style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8',fontSize: '15px' }}>
+                <TableCell style={{ fontWeight: 'bold', fontFamily: 'Arial',color:'white', background: '#1A237E',fontSize: '15px' }}>
                   Area
                 </TableCell>
-                <TableCell style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8', fontSize: '15px' }}>
+                <TableCell style={{ fontWeight: 'bold', fontFamily: 'Arial',color:'white', background: '#1A237E', fontSize: '15px' }}>
                   Descripción
                 </TableCell>
-                <TableCell style={{ fontWeight: 'bold', fontFamily: 'Arial', background: '#8BC1E8',fontSize: '15px' }}>
+                <TableCell style={{ fontWeight: 'bold', fontFamily: 'Arial',color:'white', background: '#1A237E',fontSize: '15px' }}>
                   Cantidad
                 </TableCell>
                 {/* <TableCell>
@@ -161,7 +161,7 @@ export const CustomersTable = (props) => {
       </Scrollbar>
       <TablePagination
       //color de la paginacion
-      //sx={{ backgroundColor: '#35A1F0' }}
+      sx={{ backgroundColor: '#1A237E', color: 'white' }}
         component="div"
         count={count}
         onPageChange={onPageChange}

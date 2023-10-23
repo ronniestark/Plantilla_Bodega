@@ -35,7 +35,7 @@ export const TopNav = (props) => {
           //efecto de transparencia 
           backdropFilter: 'blur(6px)',
           // backgroundColor: (theme) => alpha(theme.palette.background.default, 0.7),
-          backgroundColor: (theme) => alpha('#35A1F0', 0.7),
+          backgroundColor: (theme) => alpha('#1A237E', 0.7),
           position: 'sticky',
           left: {
             lg: `${SIDE_NAV_WIDTH}px`
@@ -65,7 +65,7 @@ export const TopNav = (props) => {
             {!lgUp && (
               <IconButton onClick={onNavOpen}>
                 <SvgIcon fontSize="large" 
-                 style={{ color: 'black' }}>
+                 style={{ color: 'white' }}>
                   {/* ICONO QUE MUESTRA LA PANEL DE LAS PAGINAS */}
                   <Bars3Icon />
                 </SvgIcon>
@@ -100,7 +100,7 @@ export const TopNav = (props) => {
                 >
                   {/* ICONO DE LA CAMPANA DE NOTIFICACIONES */}
                   <SvgIcon fontSize="large"
-                  style={{ color: '#000000' }}
+                  style={{ color: 'white' }}
                   >
                     <BellIcon/>
                   </SvgIcon>
@@ -108,6 +108,7 @@ export const TopNav = (props) => {
               </IconButton>
             </Tooltip>
 
+            {/* BOTON DE LA CUENTA TOP-NAV */}
             <Tooltip title="Cuenta">
             <Avatar
               onClick={accountPopover.handleOpen}

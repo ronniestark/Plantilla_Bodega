@@ -10,6 +10,7 @@ import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
 import { CustomersTable } from 'src/sections/customer/customers-table';
 import { CustomersSearch } from 'src/sections/customer/customers-search';
 import { applyPagination } from 'src/utils/apply-pagination';
+import { Footer } from 'src/layouts/dashboard/Footer';
 
 const now = new Date();
 
@@ -335,10 +336,7 @@ const Page = () => {
                 >
                 </Button>
               </div>
-
-
-
-
+                  
             </Stack>
             <CustomersSearch />
             <CustomersTable
@@ -353,12 +351,19 @@ const Page = () => {
               page={page}
               rowsPerPage={rowsPerPage}
               selected={customersSelection.selected}
+              
             />
+             
           </Stack>
+          
         </Container>
+        
       </Box>
+      <Footer />
     </>
+    
   );
+  
 };
 
 Page.getLayout = (page) => (
