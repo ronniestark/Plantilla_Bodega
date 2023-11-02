@@ -1,84 +1,148 @@
-import ChartBarIcon from '@heroicons/react/24/solid/ChartBarIcon';
-import CogIcon from '@heroicons/react/24/solid/CogIcon';
-import LockClosedIcon from '@heroicons/react/24/solid/LockClosedIcon';
-import ShoppingBagIcon from '@heroicons/react/24/solid/ShoppingBagIcon';
-import UserIcon from '@heroicons/react/24/solid/UserIcon';
-import UserPlusIcon from '@heroicons/react/24/solid/UserPlusIcon';
-import UsersIcon from '@heroicons/react/24/solid/UsersIcon';
-import XCircleIcon from '@heroicons/react/24/solid/XCircleIcon';
-import { SvgIcon } from '@mui/material';
+import ChartBarIcon from "@heroicons/react/24/solid/ChartBarIcon";
+import CogIcon from "@heroicons/react/24/solid/CogIcon";
+import LockClosedIcon from "@heroicons/react/24/solid/LockClosedIcon";
+import ShoppingBagIcon from "@heroicons/react/24/solid/ShoppingBagIcon";
+import UserIcon from "@heroicons/react/24/solid/UserIcon";
+import UserPlusIcon from "@heroicons/react/24/solid/UserPlusIcon";
+import UsersIcon from "@heroicons/react/24/solid/UsersIcon";
+import XCircleIcon from "@heroicons/react/24/solid/XCircleIcon";
+import { SvgIcon } from "@mui/material";
 
 export const items = [
   {
-    title: 'Inicio',
-    path: '/',
+    title: "Inicio",
+    path: "/",
     icon: (
-      <SvgIcon fontSize="small">
-        <ChartBarIcon />
-      </SvgIcon>
-    )
+      <img
+        src={"/assets/logos/casa.png"}
+        width="24"
+        height="24"
+        style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+      />
+    ),
+  },
+
+  {
+    title: "Catalogo",
+    path: "/",
+    icon: (
+      <img
+        src={"/assets/logos/catalogo.png"}
+        width="24"
+        height="24"
+        style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+      />
+    ),
   },
   {
-    title: 'Bodega',
-    path: '/customers',
+    title: "Area",
+    path: "/",
     icon: (
-      <SvgIcon fontSize="small">
-        <UsersIcon />
-      </SvgIcon>
-    )
+      <img
+        src={"/assets/logos/area.png"}
+        width="24"
+        height="24"
+        style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+      />
+    ),
+  },
+  
+
+  {
+    title: "Bodega",
+    path: "/customers",
+    icon: (
+      <img
+      src={"/assets/logos/tienda.png"}
+      width="24"
+      height="24"
+      style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+    />
+    ),
   },
   {
-    title: 'Companies',
-    path: '/companies',
+    title: "Categoria",
+    path: "/companies",
     icon: (
-      <SvgIcon fontSize="small">
-        <ShoppingBagIcon />
-      </SvgIcon>
-    )
+      <img
+      src={"/assets/logos/categoria.png"}
+      width="24"
+      height="24"
+      style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+    />
+    ),
   },
   {
-    title: 'Account',
-    path: '/account',
+    title: "Producto",
+    path: "/account",
     icon: (
-      <SvgIcon fontSize="small">
-        <UserIcon />
-      </SvgIcon>
-    )
+      <img
+      src={"/assets/logos/producto.png"}
+      width="24"
+      height="24"
+      style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+    />
+    ),
   },
   {
-    title: 'Settings',
-    path: '/settings',
+    title: "Proveedor",
+    path: "/settings",
     icon: (
-      <SvgIcon fontSize="small">
-        <CogIcon />
-      </SvgIcon>
-    )
+      <img
+      src={"/assets/logos/proveedor.png"}
+      width="24"
+      height="24"
+      style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+    />
+    ),
   },
   {
-    title: 'Login',
-    path: '/auth/login',
+    title: "Uni. Medida",
+    path: "/auth/login",
     icon: (
-      <SvgIcon fontSize="small">
-        <LockClosedIcon />
-      </SvgIcon>
-    )
+      <img
+      src={"/assets/logos/medida.png"}
+      width="24"
+      height="24"
+      style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+    />
+    ),
   },
   {
-    title: 'Register',
-    path: '/auth/register',
+    title: "Ubicacion",
+    path: "/auth/register",
     icon: (
-      <SvgIcon fontSize="small">
-        <UserPlusIcon />
-      </SvgIcon>
-    )
+      <img
+      src={"/assets/logos/ubicacion.png"}
+      width="24"
+      height="24"
+      style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+    />
+    ),
   },
   {
-    title: 'Error',
-    path: '/404',
+    title: "Inventario",
+    path: "/404",
     icon: (
-      <SvgIcon fontSize="small">
-        <XCircleIcon />
-      </SvgIcon>
-    )
-  }
+      <img
+      src={"/assets/logos/inventario.png"}
+      width="24"
+      height="24"
+      style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+    />
+    ),
+  },
+
+  {
+    title: "Ajuste. Inventario",
+    path: "/404",
+    icon: (
+      <img
+      src={"/assets/logos/ajuste.png"}
+      width="24"
+      height="24"
+      style={{ display: "block" }} // Añade esto para centrar el icono verticalmente
+    />
+    ),
+  },
 ];

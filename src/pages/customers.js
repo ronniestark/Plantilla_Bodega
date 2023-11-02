@@ -4,7 +4,7 @@ import { subDays, subHours } from 'date-fns';
 import ArrowDownOnSquareIcon from '@heroicons/react/24/solid/ArrowDownOnSquareIcon';
 import ArrowUpOnSquareIcon from '@heroicons/react/24/solid/ArrowUpOnSquareIcon';
 import PlusIcon from '@heroicons/react/24/solid/PlusIcon';
-import { Box, Button, Container, Stack, SvgIcon, Typography } from '@mui/material';
+import { Box, Button, Container, Stack, SvgIcon, Typography,Tooltip } from '@mui/material';
 import { useSelection } from 'src/hooks/use-selection';
 import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
 import { CustomersTable } from 'src/sections/customer/customers-table';
@@ -212,7 +212,7 @@ const Page = () => {
                   direction="row"
                   spacing={1}
                 >
-                  <Button
+                  {/* <Button
                     color="inherit"
                     startIcon={(
                       <SvgIcon fontSize="small">
@@ -221,7 +221,7 @@ const Page = () => {
                     )}
                   >
                     Import
-                  </Button>
+                  </Button> */}
                   <Button
                     color="inherit"
                     startIcon={(
@@ -230,12 +230,14 @@ const Page = () => {
                       </SvgIcon>
                     )}
                   >
-                    Export
+                    Exportar Archivo
                   </Button>
                 </Stack>
               </Stack>
 
               <div>
+
+                <Tooltip title='Agregar Nuevo'>
                 <Button
                   style={{
                     borderRadius: '50%',
@@ -261,7 +263,9 @@ const Page = () => {
                   }
                 >
                 </Button>
+                </Tooltip>
 
+                <Tooltip title="Editar">
                 <Button
                   style={{
                     borderRadius: '50%',
@@ -279,7 +283,7 @@ const Page = () => {
                   }}
                   startIcon={
                     <img
-                      src={'/assets/logos/edit.png'}
+                      src={'/assets/logos/editar.png'}
                       width="24"
                       height="24"
                       style={{ display: 'block' }} // Añade esto para centrar el icono verticalmente
@@ -287,6 +291,7 @@ const Page = () => {
                   }
                 >
                 </Button>
+                </Tooltip>
 
                 {/* ESTE ESTILO DE BOTON SIRVE PERO NO CENTRA EL LOGO */}
                 {/* <Button
@@ -310,6 +315,8 @@ const Page = () => {
                   />}
                 >
                 </Button> */}
+
+                <Tooltip title = 'Eliminar'>
                 <Button
                   style={{
                     borderRadius: '50%',
@@ -327,7 +334,7 @@ const Page = () => {
                   }}
                   startIcon={
                     <img
-                      src={'/assets/logos/delete.png'}
+                      src={'/assets/logos/basura.png'}
                       width="24"
                       height="24"
                       style={{ display: 'block' }} // Añade esto para centrar el icono verticalmente
@@ -335,6 +342,7 @@ const Page = () => {
                   }
                 >
                 </Button>
+                </Tooltip>
               </div>
                   
             </Stack>

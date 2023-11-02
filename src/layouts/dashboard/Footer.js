@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
+import { Logo } from 'src/components/logo';
+
 
 export const Footer = (props) => {
   return (
@@ -12,7 +14,12 @@ export const Footer = (props) => {
       }}
     >
       <Typography variant="body2">
-        UNIVERSIDAD NACIONAL DE INGENIERIA UNI -- SISTEMA DE INVENTARIO UNIVERSITARIO SIU
+        UNIVERSIDAD NACIONAL DE INGENIERIA UNI -- &nbsp;&nbsp;
+        <img src={'/assets/logos/UNI.png'}
+        width='30'
+        height='20'
+         />
+       &nbsp;&nbsp; -- SISTEMA DE INVENTARIO UNIVERSITARIO SIU
       </Typography>
     </Box>
   );
